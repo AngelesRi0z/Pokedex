@@ -1,7 +1,8 @@
+
 const numeroDePokemon=document.getElementById('')
 const pokemonContainer = document.querySelector(".pokemon-container");
-let hasta = 250;
-let desde = 1;
+let hasta = 0;
+let desde = parseInt(prompt("ingresa el numero de pokemon que  quieres ver"));
 function Pokemon(id) {
   
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`) // traer POKEMON DE API
